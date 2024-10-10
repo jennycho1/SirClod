@@ -1,0 +1,21 @@
+[submodule "external/volk"]
+	path = external/volk
+	url = git@github.com:zeux/volk.git
+	sparse-checkout = cmake
+[submodule "external/vma"]
+	path = external/vma
+	url = git@github.com:GPUOpen-LibrariesAndSDKs/VulkanMemoryAllocator.git
+	sparse-checkout = bin include src tools
+[submodule "external/vkbootstrap"]
+	path = external/vkbootstrap
+	url = git@github.com:charles-lunarg/vk-bootstrap.git
+	sparse-checkout = ext gen script src
+[submodule "external/imgui"]
+	path = external/imgui
+	url = git@github.com:ocornut/imgui.git
+	branch = docking
+	sparse-checkout = backends misc
+[submodule "external/glm"]
+	path = external/glm
+	url = git@github.com:g-truc/glm.git
+	sparse-checkout = cmake doc glm util
