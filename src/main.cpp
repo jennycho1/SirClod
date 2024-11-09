@@ -1,9 +1,18 @@
 #include <iostream>
-#include "test.h"
+#define VOLK_IMPLEMENTATION
+#include "volk.h"
+#include "src/VkBootstrap.h"
 
-int main(int argc, char const *argv[])
+#include <stdio.h>
+#include "vulkan_engine.h"
+#include <SDL.h>
+
+int main(int argc, char** args)
 {
-    doSomething();
+    VulkanEngine engine;
+    engine.Initialize();
     std::cout<<"Heluuuu"<<std::endl;
+    while (true) {}
+    engine.Destroy();
     return 0;
 }
